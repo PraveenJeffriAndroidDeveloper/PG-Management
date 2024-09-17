@@ -13,16 +13,22 @@
         android:theme="@style/Theme.PgManagement"
         tools:targetApi="31">
         <activity
-            android:name=".RoomsList"
+            android:name=".UI.UserProfile"
             android:exported="false" />
         <activity
-            android:name=".AddNewBranch"
+            android:name=".UI.GuestList"
             android:exported="false" />
         <activity
-            android:name=".BranchListViewActivity"
+            android:name=".UI.RoomsList"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UI.AddNewBranch"
+            android:exported="false" />
+        <activity
+            android:name=".UI.BranchListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

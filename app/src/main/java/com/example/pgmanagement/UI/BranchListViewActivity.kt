@@ -1,13 +1,12 @@
-package com.example.pgmanagement
+package com.example.pgmanagement.UI
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import com.example.pgmanagement.Adapter.BranchListAdapter
+import com.example.pgmanagement.DataClass.MockList
 import com.example.pgmanagement.databinding.ActivityBranchListViewBinding
-import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class BranchListViewActivity : AppCompatActivity() {
     private lateinit var binding : ActivityBranchListViewBinding

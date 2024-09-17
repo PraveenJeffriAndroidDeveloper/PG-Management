@@ -1,4 +1,4 @@
-package com.example.pgmanagement
+package com.example.pgmanagement.DataClass
 
 data class RoomsDataClass(
     val roomName : String ,

@@ -1,4 +1,6 @@
-package com.example.pgmanagement
+package com.example.pgmanagement.DataClass
+
+import com.example.pgmanagement.R
 
 data class DummyBranchDC(
     val image : Int ,

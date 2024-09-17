@@ -1,4 +1,4 @@
-package com.example.pgmanagement
+package com.example.pgmanagement.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,10 +6,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
-import androidx.recyclerview.widget.DiffUtil.ItemCallback
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.bumptech.glide.Glide
+import com.example.pgmanagement.DataClass.DummyBranchDC
+import com.example.pgmanagement.R
 
 class BranchListAdapter : RecyclerView.Adapter<BranchListAdapter.BranchViewHolder>() {
     var img = R.drawable.pg3

@@ -1,4 +1,4 @@
-package com.example.pgmanagement
+package com.example.pgmanagement.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.example.pgmanagement.R
+import com.example.pgmanagement.DataClass.RoomsDataClass
 import com.google.android.material.chip.Chip
 
 class RoomListAdapter : RecyclerView.Adapter<RoomListAdapter.RoomListViewHolder>() {

@@ -1,12 +1,11 @@
-package com.example.pgmanagement
+package com.example.pgmanagement.UI
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.pgmanagement.Adapter.RoomListAdapter
+import com.example.pgmanagement.DataClass.MockRooms
 import com.example.pgmanagement.databinding.ActivityRoomsListBinding
 
 class RoomsList : AppCompatActivity() {
@@ -20,6 +19,11 @@ class RoomsList : AppCompatActivity() {
         roomAdapter.diff.submitList(MockRooms.getRooms())
 
         binding.branchName.text = intent.getStringExtra("branch")
+
+        roomAdapter.onItemClick = {
+            val toGuestList = Intent(this , GuestList::class.java)
+            startActivity(toGuestList)
+        }
 
     }
 

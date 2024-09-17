@@ -1,8 +1,9 @@
-package com.example.pgmanagement
+package com.example.pgmanagement.UI
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.pgmanagement.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
